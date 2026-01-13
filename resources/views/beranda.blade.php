@@ -7,19 +7,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Beranda</title>
 </head>
-<body class="h-full">
-    <div class="min-h-full">
-        <x-navbar></x-navbar>
-        <header class="relative bg-gray-800 after:pointer-events-none after:absolute after:inset-x-0 after:inset-y-0 after:border-y after:border-white/10">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold tracking-tight text-white">Dashboard</h1>
-        </div>
-        </header>
-        <main>
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <!-- Your content -->
-        </div>
-        </main>
+<body class="h-full font-montserrat">
+    <div class="min-h-full bg-gray-200/75">
+        <x-navbar>
+            <x-slot:name>{{ $name }}</x-slot:name>
+        </x-navbar>
+        <div class="h-1000"></div>
         <x-footer></x-footer>
     </div>
 </body>

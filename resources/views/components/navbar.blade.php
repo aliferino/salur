@@ -1,20 +1,31 @@
-<nav class="bg-white-800/50">
-    <div class="flex items-center p-3">
-        <div class="shrink-0">
-            <div class="flex gap-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
-                <h2 class="text-base text-green-600">Salur</h2>
+<nav class="bg-white flex items-center px-10 py-5 gap-3 w-full justify-between shadow-lg fixed">
+    <div class="shrink-0 flex items-center gap-3 flex-1">
+        <div class="flex gap-x-2 items-center">
+            <div class="bg-green-800/90 p-2 rounded-xl inline-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart bg-red"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg>
             </div>
+            <h1 class="text-2xl font-bold text-black">Smart<span class="text-green-600">Care</span></h1>
         </div>
+        <div class="relative flex-1">
+            <input type="text" placeholder="Cari galangan yang membutuhkanmu..." class="peer ps-9 border py-2 rounded-full border-gray-600 w-full placeholder:text-md text-md relative placeholder:text-gray-600 focus:ring-3 focus:ring-green-800/90 focus:border-green-800 transition-all duration-300 focus:outline-none focus:placeholder:text-green-600 placeholder:transition-all placeholder:duration-300">
+            <label class="absolute top-1/4 left-3 text-gray-600 peer-focus:text-green-600 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            </label>
+        </div>
+    </div>
+    
+    <div class="flex flex-row gap-5 ">
         <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-                <a href="#" aria-current="page" class="rounded-md bg-green-400 px-3 py-2 text-sm font-medium text-white">Beranda</a>
-                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Donasi</a>
-                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Galang Dana</a>
-            </div>
+        <div class="flex items-baseline">
+            <a href="/" class="rounded-md px-3 py-2 text-lg font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Beranda</a>
+            <a href="/donasi" class="rounded-md px-3 py-2 text-lg font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Donasi</a>
+            <a href="/galang-dana" class="rounded-md px-3 py-2 text-lg font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Galang Dana</a>
         </div>
-        <div class="hidden md:block">
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-400 hover:bg-white/5 hover:text-green-600">Masuk</a>
+    </div>
+        <div class="flex p-2 gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <h1>{{ $name }}</h1>
         </div>
+        <a href="#" class="bg-green-800/90 rounded-md px-3 py-2 text-sm font-medium text-white">Masuk</a>
     </div>
 </nav>

@@ -1,9 +1,9 @@
-<div class="bg-green-800/90 p-10 text-white">
+<footer class="bg-green-800/90 p-10 text-white">
     <div class="flex flex-col gap-y-5">
         <div class="flex flex-col gap-2">
             <h1 class="text-4xl font-bold text-white">SmartCare</h1>
             <h6 class="text-base ">SmartCare adalah platform penggalangan dana yang menjembatani kepedulian dan harapan untuk pendidikan. Kami percaya setiap anak berhak mendapatkan pendidikan yang layak. Melalui kebersamaan, kebaikan kecil dapat menjadi langkah besar dalam mendukung sekolah, siswa, dan masa depan generasi penerus bangsa.</h6>
-            <div class="flex gap-5">
+            <div class="flex gap-x-2">
                 <div class="border-2 p-2 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </div>
@@ -39,4 +39,4 @@
     </div>
     <hr class="my-5">
     <h1 class="justify-self-center py-3 text-xl">© 2026 SmartCare. Seluruh hak cipta dilindungi.</h1>
-</div>
+</footer>

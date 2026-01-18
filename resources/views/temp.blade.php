@@ -9,7 +9,7 @@
 </head>
 <body class="h-full font-montserrat bg-gray-200/75 flex flex-col">
     <x-navbar></x-navbar>
-    <main class="mt-[100px]">
+    <main class="mt-[70px]">
         <div></div>
     </main>
     <x-footer></x-footer>
